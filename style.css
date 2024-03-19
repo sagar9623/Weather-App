@@ -1,0 +1,161 @@
+/* Resetting default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    background: #222;
+}
+
+/* Styling the card container */
+.card {
+    width: 90%;
+    min-width: 320px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+/* Styling the search section */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Styling the search input */
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+/* Styling the suggestions list */
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 42px);
+    background: #ebfffc;
+    border-radius: 0 0 20px 20px;
+    list-style: none;
+    overflow: hidden;
+    z-index: 1;
+    display: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling list items in suggestions */
+.suggestions li {
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Highlight on hover in suggestions */
+.suggestions li:hover {
+    background: #d5f6ed;
+}
+
+/* Styling the search button */
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+/* Styling the search button image */
+.search button img {
+    width: 16px;
+}
+
+/* Styling the weather icon */
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+/* Styling the temperature */
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+/* Styling the city name */
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+/* Styling the details section */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+/* Styling the columns */
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+/* Styling the icons in the columns */
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Styling the humidity */
+.weather {
+    display: none;
+}
+
+/* Styling the error message */
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+    color: red;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: 95%;
+    }
+}

@@ -1,0 +1,84 @@
+<!-- HTML start -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
+    <title>Weather App</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container for weather information -->
+    <div class="card">
+      <!-- Search bar -->
+      <div class="search">
+        <!-- Input field for city search -->
+        <input
+          type="text"
+          placeholder="Enter City Name"
+          spellcheck="false"
+          name="city"
+          id="cityInput"
+          autocomplete="off"
+        />
+        <!-- Suggestions list -->
+        <ul class="suggestions" id="suggestions"></ul>
+        <!-- Error message for invalid city name -->
+        <div class="error" style="display: none">
+          <p id="errorMessage">Invalid City Name</p>
+        </div>
+        <!-- Button for submitting the search -->
+        <button class="searchButton">
+          <img src="weather-app-img/images/search.png" alt="Search" />
+        </button>
+      </div>
+      <!-- Container for weather details -->
+      <div class="weather" style="display: none">
+        <!-- Icon representing weather condition -->
+        <img
+          src="weather-app-img/images/rain.png"
+          class="weather-icon"
+          alt="Weather Icon"
+        />
+        <!-- Current temperature -->
+        <h1 class="temp">22°C</h1>
+        <!-- City name -->
+        <h2 class="city">New York</h2>
+        <!-- Additional weather details -->
+        <div class="details">
+          <!-- Container for humidity -->
+          <div class="col">
+            <!-- Icon for humidity -->
+            <img
+              src="weather-app-img/images/humidity.png"
+              alt="Humidity Icon"
+            />
+            <!-- Humidity value -->
+            <div>
+              <p class="humidity">50%</p>
+              <!-- Humidity label -->
+              <p>Humidity</p>
+            </div>
+          </div>
+          <!-- Container for wind speed -->
+          <div class="col">
+            <!-- Icon for wind speed -->
+            <img src="weather-app-img/images/wind.png" alt="Wind Icon" />
+            <!-- Wind speed value -->
+            <div>
+              <p class="wind">15 Km/h</p>
+              <!-- Wind speed label -->
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript linking -->
+    <script src="app.js"></script>
+  </body>
+</html>
+<!-- HTML end -->
